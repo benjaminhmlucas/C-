@@ -1,0 +1,2 @@
+Testing From: KMS3
+Connecting To: http://www.public.navy.mil/bupers-npc/ https://cmpropac.nmci.navy.mil/ https://fedvte.usalearning.gov https://sailor.navy.mil/
