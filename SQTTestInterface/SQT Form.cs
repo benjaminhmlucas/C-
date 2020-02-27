@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,7 +16,6 @@ namespace SQTTestInterface {
         public Form1() {
             InitializeComponent();
             BuildTreeViewMenu();
-
         }
         //Create Form Data------------------------------------------------------------------------->>>>
         private void BuildTreeViewMenu() {
@@ -52,11 +51,12 @@ namespace SQTTestInterface {
             FormInputWindowTableLayoutPanel.ColumnCount = 1;
             int i;
 
-            ArrayList ComputerListToTestFromList = new ArrayList(new string[] { "Choose Workstation To Test From","KMS1", "KMS2", "KMS3", "KMS4", "KMS5","All Worstations" });
-            ArrayList ExternalSiteList = new ArrayList(new string[] { "http://www.public.navy.mil/bupers-npc/", "https://cmpropac.nmci.navy.mil/", "https://fedvte.usalearning.gov", "https://sailor.navy.mil/" });
+            ArrayList computerListToTestFromList = new ArrayList(new string[] { "Choose Workstation To Test From","KMS1", "KMS2", "KMS3", "KMS4", "KMS5","All Worstations" });
+            ArrayList externalSiteList = new ArrayList(new string[] { "http://www.public.navy.mil/bupers-npc/", "https://cmpropac.nmci.navy.mil/", "https://fedvte.usalearning.gov", "https://sailor.navy.mil/" });
+            ArrayList browserList = new ArrayList(new string[] { "Internet Explorer", "Firefox", "Chrome"});
 
-            for(i = 0;i < ExternalSiteTestLines;i++) {
-                BuildSingleExternalSiteTestLine(i, ComputerListToTestFromList, ExternalSiteList);
+            for (i = 0;i < ExternalSiteTestLines;i++) {
+                BuildSingleExternalSiteTestLine(i, computerListToTestFromList, externalSiteList, browserList);
             }
 
             //create External test controls
@@ -156,11 +156,11 @@ namespace SQTTestInterface {
             };
         }
 
-        private void BuildSingleExternalSiteTestLine(int lineCounter, ArrayList ComputerToTestFromList, ArrayList ExternalSiteList) {
+        private void BuildSingleExternalSiteTestLine(int lineCounter, ArrayList ComputerToTestFromList, ArrayList ExternalSiteList, ArrayList browserList) {
 
             TableLayoutPanel SingleTestLinePanel = new TableLayoutPanel();
             SingleTestLinePanel.Width = 600;
-            SingleTestLinePanel.Height = 218;
+            SingleTestLinePanel.Height = 280;
             SingleTestLinePanel.VerticalScroll.Enabled = true;
 
             Label TopDivider = new Label();
@@ -188,6 +188,20 @@ namespace SQTTestInterface {
                 ComputerControlComboBoxList.Add(ComputerToTestFromComboBox);
             }
 
+            Label browsersToUse = new Label();
+            browsersToUse.Text = "\nBrowser(s) To User:";
+            browsersToUse.Height = 15;
+            ListView browsersListView = new ListView();
+            foreach (String browserName in browserList) {
+                browsersListView.Items.Add(browserName);
+            }
+            browsersListView.Height = 63;
+            browsersListView.Width = 140;            
+            browsersListView.CheckBoxes = true;
+            browsersListView.View = View.List;
+            browsersListView.BorderStyle = BorderStyle.None;
+            browsersListView.BackColor = Control.DefaultBackColor;
+            
             Label SitesToTestLabel = new Label();
             SitesToTestLabel.Text = "Sites To Connect To:";
             SitesToTestLabel.Width = 600;
@@ -216,8 +230,10 @@ namespace SQTTestInterface {
                     SitesToTestList.Items.Add(s);
                 }
                 SitesToTestList.View = View.List;
+                SitesToTestList.BorderStyle = BorderStyle.None;
+                SitesToTestList.BackColor = Control.DefaultBackColor;
                 SitesToTestList.Width = 240;
-                SitesToTestList.Height = 90;
+                SitesToTestList.Height = 77;
                 SitesControlListViewList.Add(SitesToTestList);
             }
 
@@ -226,9 +242,11 @@ namespace SQTTestInterface {
             SingleTestLinePanel.Controls.Add(TopDivider, 0, 0);
             SingleTestLinePanel.Controls.Add(ComputerToTestFromLabel, 0, 1);
             SingleTestLinePanel.Controls.Add(ComputerToTestFromComboBox, 0, 2);
-            SingleTestLinePanel.Controls.Add(SitesToTestLabel, 0, 3);
-            SingleTestLinePanel.Controls.Add(SelectButtonsTableLayoutPanel, 0, 4);
-            SingleTestLinePanel.Controls.Add(SitesToTestList, 0, 5);
+            SingleTestLinePanel.Controls.Add(browsersToUse, 0, 3);
+            SingleTestLinePanel.Controls.Add(browsersListView, 0, 4);
+            SingleTestLinePanel.Controls.Add(SitesToTestLabel, 0, 5);
+            SingleTestLinePanel.Controls.Add(SelectButtonsTableLayoutPanel, 0, 6);
+            SingleTestLinePanel.Controls.Add(SitesToTestList, 0, 7);
             FormInputWindowTableLayoutPanel.Controls.Add(SingleTestLinePanel, 0, lineCounter);
 
             SelectAllBtn.Click += delegate {
