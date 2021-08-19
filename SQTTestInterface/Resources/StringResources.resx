@@ -161,7 +161,7 @@
 [USER][LOC]admin
 [WEBTEST][EXTERNAL]http://web.site.one.com/;http://web.site.two.com/;http://web.site.three.com/;http://web.site.four.com/
 [WEBTEST][INTERNAL]http://web.site.one.com/;http://web.site.two.com/;http://web.site.three.com/;http://web.site.four.com/
-[LOCPH]934bba4fb0e3a9dc0ad619a3b31e9682c0bf7bac3a0c06ea0f228fc51bfd86b9
+[LOCPH]5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5
 [REDHAT]RedHatLinuxVM1;RedHatLinuxVM2;RedHatLinuxVM3;</value>
     <comment>Default configuration that is loaded if the confugration file isn't found.  Gives template type examples for user.</comment>
   </data>
@@ -186,7 +186,7 @@
     <comment>default Hull config entry</comment>
   </data>
   <data name="dftPH" xml:space="preserve">
-    <value>934bba4fb0e3a9dc0ad619a3b31e9682c0bf7bac3a0c06ea0f228fc51bfd86b9</value>
+    <value>5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5</value>
     <comment>default Password Hash config entry</comment>
   </data>
   <data name="dftReg" xml:space="preserve">
