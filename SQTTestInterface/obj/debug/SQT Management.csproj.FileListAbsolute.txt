@@ -1,0 +1,43 @@
+C:\Users\lucasb\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\lucasb\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\lucasb\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\lucasb\source\repos\WindowsFormsApp1\obj\Debug\SQT Management.csprojAssemblyReference.cache
+C:\Users\lucasb\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\lucasb\source\repos\WindowsFormsApp1\obj\Debug\SQT Management.csproj.GenerateResource.cache
+C:\Users\lucasb\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\lucasb\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\lucasb\source\repos\WindowsFormsApp1\obj\Debug\SQTTestInterface.Form1.resources
+C:\Users\lucasb\source\repos\SQTTestInterface\obj\Debug\SQT Management.csprojAssemblyReference.cache
+C:\Users\lucasb\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.Form1.resources
+C:\Users\lucasb\source\repos\SQTTestInterface\obj\Debug\SQT Management.csproj.GenerateResource.cache
+C:\Users\lucasb\source\repos\SQTTestInterface\bin\Debug\SQTTestInterface.exe.config
+C:\Users\lucasb\source\repos\SQTTestInterface\bin\Debug\SQTTestInterface.exe
+C:\Users\lucasb\source\repos\SQTTestInterface\bin\Debug\SQTTestInterface.pdb
+C:\Users\lucasb\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.Properties.Resources.resources
+C:\Users\lucasb\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.exe
+C:\Users\lucasb\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.pdb
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.Properties.Resources.resources
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQT Management.csproj.GenerateResource.cache
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\SQTTestInterface.exe.config
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\SQTTestInterface.exe
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\SQTTestInterface.pdb
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQT Management.csprojAssemblyReference.cache
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.exe
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.pdb
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQT Management.csproj.CoreCompileInputs.cache
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQT Management.csproj.CopyComplete
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\Renci.SshNet.dll
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\Renci.SshNet.xml
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.MainInterface.resources
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.LoginForm.resources
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.changeLocalPasswordForm.resources
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.Resources.StringResources.resources
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\STSService.dll
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\VMware.Vim.dll
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\VimService.dll
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\InternalVimService50.Wcf.dll
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\InventoryService55.Wcf.dll
+C:\Users\benja\source\repos\SQTTestInterface\bin\Debug\VMware.Binding.Wcf.dll
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.ComponentsLoadingWindow.resources
+C:\Users\benja\source\repos\SQTTestInterface\obj\Debug\SQTTestInterface.g.resources
