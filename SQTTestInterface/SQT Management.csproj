@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SQTTestInterface</RootNamespace>
     <AssemblyName>SQTTestInterface</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,7 +33,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ComputerTowerIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InternalVimService50.Wcf">
+      <HintPath>Resources\InternalVimService50.Wcf.dll</HintPath>
+    </Reference>
+    <Reference Include="InventoryService55.Wcf">
+      <HintPath>Resources\InventoryService55.Wcf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="STSService">
+      <HintPath>..\vsphere-automation-sdk-.net-master\packages\STSService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
@@ -40,6 +57,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,28 +68,81 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VimService">
+      <HintPath>Resources\VimService.dll</HintPath>
+    </Reference>
+    <Reference Include="VMware.Binding.Wcf">
+      <HintPath>Resources\VMware.Binding.Wcf.dll</HintPath>
+    </Reference>
+    <Reference Include="VMware.Vim">
+      <HintPath>Resources\VMware.Vim.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SQT Form.cs">
+    <Compile Include="ADAgent.cs" />
+    <Compile Include="ADServer.cs" />
+    <Compile Include="ChangeLocalPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SQT Form.Designer.cs">
-      <DependentUpon>SQT Form.cs</DependentUpon>
+    <Compile Include="ChangeLocalPasswordForm.Designer.cs">
+      <DependentUpon>ChangeLocalPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentsLoadingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComponentsLoadingWindow.Designer.cs">
+      <DependentUpon>ComponentsLoadingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedHatAgent.cs" />
+    <Compile Include="EsxAgent.cs" />
+    <Compile Include="RedHatHost.cs" />
+    <Compile Include="EsxHost.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\StringResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SupportFunctions.cs" />
+    <Compile Include="MainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainInterface.Designer.cs">
+      <DependentUpon>MainInterface.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="ChangeLocalPasswordForm.resx">
+      <DependentUpon>ChangeLocalPasswordForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="SQT Form.resx">
-      <DependentUpon>SQT Form.cs</DependentUpon>
+    <EmbeddedResource Include="ComponentsLoadingWindow.resx">
+      <DependentUpon>ComponentsLoadingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StringResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainInterface.resx">
+      <DependentUpon>MainInterface.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -85,6 +157,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyclops.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ComputerTowerIcon.ico" />
+    <Content Include="Resources\ComputerTowerIcon.ico" />
+    <Content Include="Resources\connection.ico" />
+    <Resource Include="Resources\robot1.gif" />
+    <Content Include="Resources\robot2.gif" />
+    <Content Include="Resources\robot3.gif" />
+    <Content Include="Resources\robot4.gif" />
+    <Content Include="Resources\robot5.gif" />
+    <Content Include="Resources\robot6.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
