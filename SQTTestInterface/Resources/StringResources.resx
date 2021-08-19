@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="acceptableTopLevelDomains" xml:space="preserve">
+    <value>com,org,gov,mil</value>
+  </data>
+  <data name="accountValidatorMessageWindowTitle" xml:space="preserve">
+    <value>Account Validator</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="actionCanceledMessageWindowTitle" xml:space="preserve">
+    <value>Action Canceled!</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="ADConnectionErrorsMessageWindowTitle" xml:space="preserve">
+    <value>Active Directory Connection Configuration Errors</value>
+  </data>
+  <data name="configSettingsLineList" xml:space="preserve">
+    <value>[ADIP],[ESXIP],[HULL],[LOCPH],[REDHAT],[USER][DA],[USER][ESX],[USER][LOC],[USER][REG],[USER][SA],[USER][SM],[USER][SSH],[USER][WA],[WEBTEST][EXTERNAL],[WEBTEST][INTERNAL]</value>
+    <comment>List used to check imported settings file lines begin with the proper characters.</comment>
+  </data>
+  <data name="configurationFilePath" xml:space="preserve">
+    <value>.\\SSAManager.conf</value>
+    <comment>saved configuration</comment>
+  </data>
+  <data name="configurationManagerMessageWindowTitle" xml:space="preserve">
+    <value>Configuration Manager</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="defaultPassMessageWindowTitle" xml:space="preserve">
+    <value>Domain Default Test Password Setter</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="defaultSettings" xml:space="preserve">
+    <value>[HULL]&lt;HULL#&gt;
+[ESXIP]&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;
+[ADIP]&lt;IP&gt;;&lt;IP&gt;;
+[USER][REG]&lt;DOMAIN&gt;\&lt;USERNAME&gt;
+[USER][DA]&lt;DOMAIN&gt;\&lt;USERNAME&gt;
+[USER][SA]&lt;DOMAIN&gt;\&lt;USERNAME&gt;
+[USER][WA]&lt;DOMAIN&gt;\&lt;USERNAME&gt;
+[USER][SSH]&lt;USERNAME&gt;
+[USER][SM]&lt;USERNAME&gt;
+[USER][ESX]&lt;USERNAME&gt;
+[USER][LOC]admin
+[WEBTEST][EXTERNAL]http://web.site.one.com/;http://web.site.two.com/;http://web.site.three.com/;http://web.site.four.com/
+[WEBTEST][INTERNAL]http://web.site.one.com/;http://web.site.two.com/;http://web.site.three.com/;http://web.site.four.com/
+[LOCPH]934bba4fb0e3a9dc0ad619a3b31e9682c0bf7bac3a0c06ea0f228fc51bfd86b9
+[REDHAT]RedHatLinuxVM1;RedHatLinuxVM2;RedHatLinuxVM3;</value>
+    <comment>Default configuration that is loaded if the confugration file isn't found.  Gives template type examples for user.</comment>
+  </data>
+  <data name="dftADIP" xml:space="preserve">
+    <value>&lt;IP&gt;;&lt;IP&gt;;</value>
+    <comment>default AD Ip address config entry</comment>
+  </data>
+  <data name="dftDA" xml:space="preserve">
+    <value>&lt;DOMAIN&gt;\&lt;USERNAME&gt;</value>
+    <comment>default Domain Admin config entry</comment>
+  </data>
+  <data name="dftESX" xml:space="preserve">
+    <value>&lt;USERNAME&gt;</value>
+    <comment>default ESX user config entry</comment>
+  </data>
+  <data name="dftESXIP" xml:space="preserve">
+    <value>&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;&lt;IP&gt;;</value>
+    <comment>default ESX Host IP address config entry</comment>
+  </data>
+  <data name="dftHull" xml:space="preserve">
+    <value>&lt;HULL#&gt;</value>
+    <comment>default Hull config entry</comment>
+  </data>
+  <data name="dftPH" xml:space="preserve">
+    <value>934bba4fb0e3a9dc0ad619a3b31e9682c0bf7bac3a0c06ea0f228fc51bfd86b9</value>
+    <comment>default Password Hash config entry</comment>
+  </data>
+  <data name="dftReg" xml:space="preserve">
+    <value>&lt;DOMAIN&gt;\&lt;USERNAME&gt;</value>
+    <comment>default Regular User config entry</comment>
+  </data>
+  <data name="dftRH" xml:space="preserve">
+    <value>RedHatLinuxVM1;RedHatLinuxVM2;RedHatLinuxVM3;</value>
+    <comment>default RedHat Host IP config entry</comment>
+  </data>
+  <data name="dftSA" xml:space="preserve">
+    <value>&lt;DOMAIN&gt;\&lt;USERNAME&gt;</value>
+    <comment>default Server Admin config entry</comment>
+  </data>
+  <data name="dftSM" xml:space="preserve">
+    <value>&lt;USERNAME&gt;</value>
+    <comment>default SM User config entry</comment>
+  </data>
+  <data name="dftSSH" xml:space="preserve">
+    <value>&lt;USERNAME&gt;</value>
+    <comment>default SSH User config entry</comment>
+  </data>
+  <data name="dftUser" xml:space="preserve">
+    <value>admin</value>
+    <comment>default Local User config entry</comment>
+  </data>
+  <data name="dftWA" xml:space="preserve">
+    <value>&lt;DOMAIN&gt;\&lt;USERNAME&gt;</value>
+    <comment>default Workstation Admin config entry</comment>
+  </data>
+  <data name="dftWebExt" xml:space="preserve">
+    <value>http://web.site.one.com/;http://web.site.two.com/;http://web.site.three.com/;http://web.site.four.com/</value>
+    <comment>default Externeal Website config entry</comment>
+  </data>
+  <data name="dftWebInt" xml:space="preserve">
+    <value>http://web.site.one.com/;http://web.site.two.com/;http://web.site.three.com/;http://web.site.four.com/</value>
+    <comment>default Internal Website config entry</comment>
+  </data>
+  <data name="externalSiteTestLogFilePath" xml:space="preserve">
+    <value>.\\ExternalSiteTestLog.txt</value>
+    <comment>Test Log location</comment>
+  </data>
+  <data name="externalSiteTestManagerMessageWindowTitle" xml:space="preserve">
+    <value>External Site Test Manager</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="hullandUserValidatorMessageWindowTitle" xml:space="preserve">
+    <value>Hull and User Validator</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="ipAddressValidatorMessageWindowTitle" xml:space="preserve">
+    <value>IP Address Validator</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="loginValidatorMessageWindowTitle" xml:space="preserve">
+    <value>Login Validator</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="menuConfigManagementItems" xml:space="preserve">
+    <value>Domain Ping Test,Check RBAC,Check Java Versioning,Check All Services,Get Registry Data</value>
+    <comment>Menu list for main menu</comment>
+  </data>
+  <data name="menuSettingsItems" xml:space="preserve">
+    <value>Windows &amp; Local Settings,Server Address Settings,Ship and User Settings,Website List Settings,Deck Profile Settings</value>
+    <comment>Menu list for main menu</comment>
+  </data>
+  <data name="menuSQTTestItems" xml:space="preserve">
+    <value>Internal Website Tests,External Website Tests</value>
+    <comment>Menu list for main menu</comment>
+  </data>
+  <data name="menuVMFunctionsItems" xml:space="preserve">
+    <value>Power On Machines,Power Off Machines,Check VM Tools,Snapshot All Virtual Machines,Export Deck</value>
+    <comment>Menu list for main menu</comment>
+  </data>
+  <data name="mixedRegex" xml:space="preserve">
+    <value>^[A-Za-z0-9_\./:-]+$</value>
+  </data>
+  <data name="noADConfigString" xml:space="preserve">
+    <value>Check Active Directory Connection Settings!</value>
+    <comment>A query has not been able to get information from Active directory</comment>
+  </data>
+  <data name="noConfigString" xml:space="preserve">
+    <value>Config Error! Reload program or re-enter correct values!</value>
+    <comment>if no configuration is found, you will see this appear in TextBox objects</comment>
+  </data>
+  <data name="numberRegex" xml:space="preserve">
+    <value>^[\d]+$</value>
+  </data>
+  <data name="passwordValidatorWindowTitle" xml:space="preserve">
+    <value>Password Validator</value>
+    <comment>Window Title</comment>
+  </data>
+  <data name="powerOffPrimaries" xml:space="preserve">
+    <value>SQ01,WEB,IAEXET,EX01,EX02,FS01,DC01,DC02,YUM,VCSA</value>
+    <comment>Primary servers that need to be powered off in a certain order</comment>
+  </data>
+  <data name="powerOnPrimaries" xml:space="preserve">
+    <value>DC01,VCSA,YUM,DC02,SQ01,FS01,ISE01,ISE02,EX01,EX02,WEB,IAEXET,EM01,EM02,IM01,IM02</value>
+    <comment>Primary servers that need to be powered on in a certain order</comment>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="topMenuList" xml:space="preserve">
+    <value>SSA Deck Manager 1.0,Virtual Machine Functions,Configuration Management,Tests,Deck Settings</value>
+    <comment>Menu list for main menu</comment>
+  </data>
+  <data name="websiteManagerMessageWindowTitle" xml:space="preserve">
+    <value>Website Manager</value>
+    <comment>Window Title</comment>
+  </data>
+</root>
