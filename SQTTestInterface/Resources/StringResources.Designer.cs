@@ -199,7 +199,7 @@ namespace SQTTestInterface.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 934bba4fb0e3a9dc0ad619a3b31e9682c0bf7bac3a0c06ea0f228fc51bfd86b9.
+        ///   Looks up a localized string similar to 5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5.
         /// </summary>
         internal static string dftPH {
             get {
