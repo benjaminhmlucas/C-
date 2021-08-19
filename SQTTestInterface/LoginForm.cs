@@ -23,7 +23,7 @@ namespace SQTTestInterface {
         private string adIP = StringResources.dftADIP;
         private ArrayList adIPList = new ArrayList(); //used to create ADAgent
         private string user = StringResources.dftDA;
-        private string hardPass = "<PASSWORDHERE>";//REMOVE LINE AT FINISH - Used to bypass password entry for testing
+        //private string hardPass = "<PASSWORDHERE>";//REMOVE LINE AT FINISH - Used to bypass password entry for testing
         private string pwd = StringResources.dftPH;
         private string localUser = StringResources.dftUser;
         private string localPwdHash = StringResources.dftPH;//This is compared to user input after it has been hashed
@@ -57,7 +57,7 @@ namespace SQTTestInterface {
                 adIPTextBox.Enabled = true;
                 adIPLabel.Enabled = true;
                 userNameTextBox.Text = user;
-                pwdLoginTextBox.Text = hardPass;//REMOVE LINE AT FINISH - Used to bypass password entry for testing
+                //pwdLoginTextBox.Text = hardPass;//REMOVE LINE AT FINISH - Used to bypass password entry for testing
 
             }
         }
@@ -270,7 +270,7 @@ namespace SQTTestInterface {
             }
             configFileReader.Close();
             adIPTextBox.Text = adIP;
-            pwdLoginTextBox.Text = hardPass;//REMOVE LINE AT FINISH - Used to bypass password entry for testing
+            //pwdLoginTextBox.Text = hardPass;//REMOVE LINE AT FINISH - Used to bypass password entry for testing
             textBoxHT.Clear();
             if (connectLocalCheckBox.Checked) {
                 userNameTextBox.Text = localUser;
